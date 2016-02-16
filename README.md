@@ -4,6 +4,8 @@ Cordova plugin we use for Tutti flirty.
 
 Rework of the plugin created by @mbppower https://github.com/mbppower/CordovaCameraPreview, adapted to our needs.
 
+**This plugin is still under work and hasn't been tested**
+
 # License
 
  Apache License
