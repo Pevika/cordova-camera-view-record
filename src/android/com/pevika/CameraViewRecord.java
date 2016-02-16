@@ -177,9 +177,10 @@ public class CameraViewRecord extends CordovaPlugin implements CameraActivity.Ca
 		Log.d(TAG, "startRecording");
 		if (fragment != null) {
 			try {
-				fragment.startRecording(args.getInt(0));
-				this.sendSuccess(callbackContext);
-				return true;
+				if (fragment.startRecording(args.getInt(0)) == true) {
+					this.sendSuccess(callbackContext);
+					return true;
+				}
 			} catch (Exception e) {
 				Log.d(TAG, "exception");
 			}

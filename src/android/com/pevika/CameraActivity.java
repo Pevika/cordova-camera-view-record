@@ -269,7 +269,7 @@ public class CameraActivity extends Fragment implements MediaRecorder.OnInfoList
 		mediaRecorder.setCamera(mCamera);
 		mediaRecorder.setAudioSource(MediaRecorder.AudioSource.CAMCORDER);
 		mediaRecorder.setVideoSource(MediaRecorder.VideoSource.CAMERA);
-		mediaRecorder.setProfile(CamcorderProfile.get(CamcorderProfile.QUALITY_480P));
+		mediaRecorder.setProfile(CamcorderProfile.get(CamcorderProfile.QUALITY_720P));
 		mediaRecorder.setOutputFile(mFile.getPath());
 		mediaRecorder.setMaxDuration(duration * 1000); // milliseconds
 		mediaRecorder.setMaxFileSize(50000000);
@@ -296,14 +296,14 @@ public class CameraActivity extends Fragment implements MediaRecorder.OnInfoList
 
 	private boolean mRecording = false;
 
-	public void startRecording(final int duration) {
+	public boolean startRecording(final int duration) {
 		if (mRecording) {
 			Log.d(TAG, "Is already recording");
-			return ;
+			return false;
 		}
 		if (prepareMediaRecorder(duration) == false) {
 			Log.d(TAG, "Cannot record");
-			return ;
+			return false;
 		}
 		mRecording = true;
 		getActivity().runOnUiThread(new Runnable() {
@@ -319,6 +319,7 @@ public class CameraActivity extends Fragment implements MediaRecorder.OnInfoList
 				}
 			}
 		});
+		return true;
 	}
 
 	public void stopRecording() {
@@ -692,12 +693,9 @@ class CameraUtils {
 
 	public static Camera.Size getMatchingResolution (List<Camera.Size> sizes) {
 		Camera.Size chosen = null;
-		int ideal = 640 * 480;
-		int chosenRate = 0;
 		for (Camera.Size size : sizes) { // get the closest from the ideal
-			if (chosen == null || chosenRate > Math.abs(ideal - size.height * size.width)) {
+			if (chosen == null || chosen.height * chosen.width < size.height * size.width) {
 				chosen = size;
-				chosenRate = Math.abs(ideal - size.height * size.width);
 			}
 		}
 		return chosen;
