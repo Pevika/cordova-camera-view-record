@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f15a8b73-8ba6-449a-a8e0-603673bbba41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/android/com/mbppower/CameraPreview.java" afterPath="$PROJECT_DIR$/src/android/com/mbppower/CameraPreview.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/CameraPreview.js" afterPath="$PROJECT_DIR$/www/CameraPreview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CordovaCameraPreview.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CameraActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/android/com/mbppower/CameraActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5752427">
+            <state vertical-scroll-proportion="0.0">
               <caret line="689" column="44" selection-start-line="689" selection-start-column="44" selection-end-line="689" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -71,6 +72,36 @@
                 <element signature="e#31770#31771#0" expanded="true" />
                 <element signature="e#31800#31801#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.2941177">
+              <caret line="4" column="113" selection-start-line="4" selection-start-column="113" selection-end-line="4" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.055696204">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="188" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="200" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,6 +136,9 @@
         <option value="$PROJECT_DIR$/www/CameraPreview.js" />
         <option value="$PROJECT_DIR$/src/android/com/mbppower/CameraPreview.java" />
         <option value="$PROJECT_DIR$/src/android/com/mbppower/CameraActivity.java" />
+        <option value="$PROJECT_DIR$/LICENSE" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -505,7 +539,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/android/com/mbppower/CameraActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5752427">
+        <state vertical-scroll-proportion="0.0">
           <caret line="689" column="44" selection-start-line="689" selection-start-column="44" selection-end-line="689" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -526,6 +560,30 @@
             <element signature="e#31770#31771#0" expanded="true" />
             <element signature="e#31800#31801#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="188" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="200" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2941177">
+          <caret line="4" column="113" selection-start-line="4" selection-start-column="113" selection-end-line="4" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.055696204">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
