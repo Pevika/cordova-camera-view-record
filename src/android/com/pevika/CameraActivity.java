@@ -303,6 +303,7 @@ public class CameraActivity extends Fragment implements MediaRecorder.OnInfoList
 		}
 		if (prepareMediaRecorder(duration) == false) {
 			Log.d(TAG, "Cannot record");
+			mRecording = false;
 			return false;
 		}
 		mRecording = true;
